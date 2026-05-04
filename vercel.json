@@ -1,9 +1,12 @@
 {
   "installCommand": "bun install",
-  "buildCommand": "NEXT_WEB_BUILD_WORKERS=1 next build",
+  "buildCommand": "disable_telemetry=1 NODE_OPTIONS='--max-old-space-size=3072' next build",
   "env": {
     "NEXT_PUBLIC_SERVICE_MODE": "client",
-    "NODE_OPTIONS": "--max-old-space-size=3072",
-    "GENERATE_SOURCEMAP": "false"
+    "GENERATE_SOURCEMAP": "false",
+    "NEXT_TELEMETRY_DISABLED": "1",
+    "WEBPACK_WORKER_COUNT": "1",
+    "CPUS": "1",
+    "NEXT_MINIFIER_DISABLED": "false"
   }
 }
