@@ -1,7 +1,9 @@
 {
   "installCommand": "bun install",
-  "buildCommand": "next build",
+  "buildCommand": "NEXT_WEB_BUILD_WORKERS=1 next build",
   "env": {
-    "NEXT_PUBLIC_SERVICE_MODE": "client"
+    "NEXT_PUBLIC_SERVICE_MODE": "client",
+    "NODE_OPTIONS": "--max-old-space-size=3072",
+    "GENERATE_SOURCEMAP": "false"
   }
 }
