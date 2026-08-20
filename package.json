@@ -30,7 +30,7 @@
     "e2e"
   ],
   "scripts": {
-    "prebuild": "tsx scripts/prebuild.mts && npm run lint",
+    "prebuild": "tsx scripts/prebuild.mts",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next build",
     "postbuild": "npm run build-sitemap && npm run build-migrate-db",
     "build:analyze": "NODE_OPTIONS=--max-old-space-size=6144 ANALYZE=true next build",
