@@ -1,6 +1,6 @@
 {
   "installCommand": "bun install",
-  "buildCommand": "disable_telemetry=1 NODE_OPTIONS='--max-old-space-size=3072' next build",
+  "buildCommand": "disable_telemetry=1 NODE_OPTIONS='--max-old-space-size=8192' next build",
   "env": {
     "NEXT_PUBLIC_SERVICE_MODE": "client",
     "GENERATE_SOURCEMAP": "false",
