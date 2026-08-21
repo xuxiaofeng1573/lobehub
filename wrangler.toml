@@ -1,0 +1,7 @@
+name = "lobehub"
+main = ".open-next/worker.js"
+compatibility_date = "2024-09-03"
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
